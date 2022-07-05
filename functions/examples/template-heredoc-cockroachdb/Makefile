@@ -7,5 +7,5 @@ all:
 	true
 
 image:
-	docker build image -t gcr.io/kustomize-functions/example-cockroachdb:v0.1.0
-	#docker push gcr.io/kustomize-functions/example-cockroachdb:v0.1.0
+	docker build image -t willww64/kustomize-functions-example-cockroachdb:v0.1.0
+	docker push willww64/kustomize-functions-example-cockroachdb:v0.1.0

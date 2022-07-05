@@ -8,7 +8,7 @@
 # input Resources.
 if [ -z ${WRAPPED} ]; then
   export WRAPPED=true
-  kustomize fn run wrap -- $0
+  kustomize fn wrap -- $0
   exit $?
 fi
 

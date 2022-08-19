@@ -6,7 +6,7 @@ ENV CGO_ENABLED=0
 WORKDIR /go/src/
 COPY go.mod .
 COPY go.sum .
-RUN go mod download
+RUN GOPROXY=https://goproxy.cn,direct go mod download
 COPY main.go .
 RUN go build -v -o /usr/local/bin/config-function ./
 
